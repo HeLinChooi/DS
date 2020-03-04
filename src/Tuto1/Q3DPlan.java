@@ -1,5 +1,5 @@
 package Tuto1;
-
+//He Lin's code
 public class Q3DPlan extends Q3{
     int bandwidthRate = 10;
     double dataUsageRate = 0.2;

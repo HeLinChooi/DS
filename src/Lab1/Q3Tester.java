@@ -1,5 +1,5 @@
 package Lab1;
-
+//He Lin's code
 public class Q3Tester {
     public static void main(String[] args) {
         Q3 a = new Q3("Host 1", "10.1.1.1", "255.255.255.224", true);

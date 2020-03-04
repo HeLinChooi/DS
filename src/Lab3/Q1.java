@@ -1,5 +1,5 @@
 package Lab3;
-
+//He Lin's code
 public class Q1 {
 
     public static int fac(int n) {

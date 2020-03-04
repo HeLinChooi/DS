@@ -1,5 +1,5 @@
 package Lab2;
-
+//He Lin's code
 public class Q2Tester {
 
     public static void main(String[] args) {

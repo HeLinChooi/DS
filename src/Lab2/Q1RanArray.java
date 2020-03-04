@@ -1,4 +1,5 @@
 package Lab2;
+//He Lin's code
 //public class Q1RanArray<T extends Comparable<T>> implements Q1Ran<Integer>{
 public class Q1RanArray<T extends Comparable<T>> implements Q1Ran<T>{
     

@@ -1,5 +1,5 @@
 package Tuto4;
-
+//He Lin's code
 public class Q6Tester {
     public static void main(String[] args) {
         Q6LinkedList<Integer> list = new Q6LinkedList<>();

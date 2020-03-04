@@ -1,5 +1,5 @@
 package Lab2;
-
+//He Lin's code
 public interface Q2SimpleLog {
     public void insert(String s);
     public boolean isFull();

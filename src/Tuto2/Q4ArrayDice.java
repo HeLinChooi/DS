@@ -1,5 +1,5 @@
 package Tuto2;
-
+//He Lin's code
 import java.util.Random;
 
 public class Q4ArrayDice implements Q4Dice {

@@ -1,5 +1,5 @@
 package Tuto2;
-
+//He Lin's code
 public class Q4Tester {
     public static void main(String[] args) {
         Q4ArrayDice a = new Q4ArrayDice();

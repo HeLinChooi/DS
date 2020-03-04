@@ -1,5 +1,5 @@
 package Lab1;
-
+//He Lin's code
 public class Q3 {
 
     private String name, ip, sm;

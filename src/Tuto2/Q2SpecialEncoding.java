@@ -1,5 +1,5 @@
 package Tuto2;
-
+//He Lin's code
 public class Q2SpecialEncoding<T> {
 
     String[] com;

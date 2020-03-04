@@ -1,5 +1,5 @@
 package Lab3;
-
+//He Lin's code
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

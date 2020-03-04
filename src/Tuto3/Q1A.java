@@ -1,5 +1,5 @@
 package Tuto3;
-
+//He Lin's code
 public class Q1A {
     
     public static int findMin(int[]nums){

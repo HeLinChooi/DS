@@ -1,5 +1,5 @@
 package Lab1;
-
+//He Lin's code
 public class Q1Tester {
     public static void main(String[] args) {
         Q1 obj = new Q1(13, 45);

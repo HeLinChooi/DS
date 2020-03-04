@@ -1,5 +1,5 @@
 package Tuto1;
-
+//He Lin's code
 public class Q4 implements Comparable<Q4>{
     private String modelName;
     private int price;

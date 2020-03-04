@@ -1,5 +1,5 @@
 package Tuto3;
-
+//He Lin's code
 public class Q1D {
     public static void toBinary(int num){
         if(num == 0){

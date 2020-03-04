@@ -1,5 +1,5 @@
 package Lab2;
-
+//He Lin's code
 public class Q2TextFileLog implements Q2SimpleLog {
     private String[] log;
     private int index = -1;

@@ -1,5 +1,5 @@
 package Lab2;
-
+//He Lin's code
 import java.util.Random;
 
 public class Q1Tester {

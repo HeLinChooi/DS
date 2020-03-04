@@ -1,5 +1,5 @@
 package Tuto4;
-
+//He Lin's code
 import java.util.Scanner;
 
 public class Q3Tester {
