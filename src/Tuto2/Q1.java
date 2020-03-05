@@ -1,5 +1,6 @@
 package Tuto2;
 public class Q1 {
+    //use instanceof to differentiate them. My method is a bit odd haha
     public static <T> void compareOrSum(T e1,T e2){
         System.out.printf("The paremeters value are : %s and %s\n",e1,e2);
         //use instanceof method if generic class is requested
@@ -25,9 +26,9 @@ public class Q1 {
         }
     }
     public static void main(String[] args) {
-        compareOrSum("Hello", "World");
+//        compareOrSum("Hello", "World");
         compareOrSum(12.4,64.3);
         compareOrSum(20,35);
-        compareOrSum("Hello", "Hello");
+//        compareOrSum("Hello", "Hello");
     }
 }
