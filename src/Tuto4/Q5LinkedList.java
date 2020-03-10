@@ -68,15 +68,25 @@ public class Q5LinkedList<T> {
             System.out.println("The list is empty.");
         }
         while (temp != null) {
+            boolean xAtHead = false;
             if (temp.getData().toString().equals(x + "")) {
                 if (temp.getNextNode() != null) {
-                    previousTemp.setNextNode(temp.getNextNode());
-                } else {
+                    if (temp == previousTemp) {
+                        temp = temp.getNextNode();
+                        head = temp;
+                        previousTemp = temp;
+                        xAtHead = true;
+                    } else {
+                        previousTemp.setNextNode(temp.getNextNode());
+                    }
+                }else{
                     previousTemp.setNextNode(null);
                 }
             }
-            previousTemp = temp;
-            temp = temp.getNextNode();
+            if(!xAtHead){
+                previousTemp = temp;
+                temp = temp.getNextNode();
+            }
         }
     }
 

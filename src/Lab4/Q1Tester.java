@@ -1,7 +1,5 @@
 package Lab4;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Random;
 
 public class Q1Tester {
@@ -17,9 +15,13 @@ public class Q1Tester {
         }
         list.showList();
         System.out.println("");
-        reverseList.showList();
+//        reverseList.showList();
         //sort the list
+        System.out.println("\nsorting list...");
         list.sort();
+        list.showList();System.out.println("");
+        //question c
+        list.addSortNode(50);
         list.showList();
 //        Collections.sort(list);
     }
