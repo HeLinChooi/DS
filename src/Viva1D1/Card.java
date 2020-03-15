@@ -1,4 +1,4 @@
-package Viva1;
+package Viva1D1;
 
 public class Card<E extends Comparable<E>> implements Comparable<Card<E>> {
     //rank is useless, jsut to fulfill question

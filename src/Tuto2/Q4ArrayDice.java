@@ -5,7 +5,6 @@ import java.util.Random;
 public class Q4ArrayDice implements Q4Dice {
 
     private Integer[] arr;
-
     public void roll(int times) {
         System.out.println("Array Implementation: Roll " + times + " time{s)");
         arr = new Integer[times];

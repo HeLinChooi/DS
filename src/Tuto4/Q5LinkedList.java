@@ -61,6 +61,9 @@ public class Q5LinkedList<T> {
         return r.nextInt(11);
     }
 
+    public void deleteNodeByPosition(int pos){
+        
+    }
     public void deleteNode(int x) {
         Q3ListNode temp = head;
         Q3ListNode previousTemp = head;

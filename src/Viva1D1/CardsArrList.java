@@ -1,4 +1,4 @@
-package Viva1;
+package Viva1D1;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -22,66 +22,36 @@ public class CardsArrList<E> implements CardDeck<Card> {
     
     //for Integer
     private void intGenerate() {
-        P pattern;
         //p will have prestring with length 7
         String p = "";
-        for (int i = 0; i < 4; i++) {
-            switch (i) {
-                case 0:
-                    pattern = P.Club;
-                    p = "Club   ";
-                    break;
-                case 1:
-                    pattern = P.Diamond;
-                    p = "Diamond";
-                    break;
-                case 2:
-                    pattern = P.Heart;
-                    p = "Heart  ";
-                    break;
-                case 3:
-                    pattern = P.Spade;
-                    p = "Spade  ";
-                    break;
-            }
             for (int j = 0; j < 10; j++) {
+                p = "Club   ";
+                arrList.add(new Card(p + j));
+                p = "Spade  ";
+                arrList.add(new Card(p + j));
+                p = "Heart  ";
+                arrList.add(new Card(p + j));
+                p = "Diamond";
                 arrList.add(new Card(p + j));
 //                System.out.println(p + j);
             }
-        }
     }
 
     //for Character
     private void charGenerate() {
-        P pattern;
         //p will have prestring with length 7
         String p = "";
-        for (int i = 0; i < 4; i++) {
-            switch (i) {
-                case 0:
-                    pattern = P.Club;
-                    p = "Club   ";
-                    break;
-                case 1:
-                    pattern = P.Diamond;
-                    p = "Diamond";
-                    break;
-                case 2:
-                    pattern = P.Heart;
-                    p = "Heart  ";
-                    break;
-                case 3:
-                    pattern = P.Spade;
-                    p = "Spade  ";
-                    break;
-            }
             for (int j = 0; j < 26; j++) {
-                int k = j + 65;
-                char c = (char) k;
-                arrList.add(new Card(p + c));
+                p = "Spade  ";
+                arrList.add(new Card(p + (char) (j+65)));
+                p = "Heart  ";
+                arrList.add(new Card(p + (char) (j+65)));
+                p = "Diamond";
+                arrList.add(new Card(p + (char) (j+65)));
+                p = "Club   ";
+                arrList.add(new Card(p + (char) (j+65)));
 //                System.out.println(p + c);
             }
-        }
     }
 
     @Override
