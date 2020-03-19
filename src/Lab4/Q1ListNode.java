@@ -39,7 +39,7 @@ public class Q1ListNode<T> implements Comparable<Q1ListNode> {
 
     @Override
     public String toString() {
-        return data + "---->";
+        return data+"";
     }
 
     //dirty code
