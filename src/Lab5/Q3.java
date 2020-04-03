@@ -1,7 +1,6 @@
 package Lab5;
 //He Lin's code
 
-import java.util.HashMap;
 import java.util.Stack;
 
 public class Q3 {
@@ -124,6 +123,6 @@ public class Q3 {
     }
     public static void main(String[] args) {
         //decide how many queen you want!
-        queens(4);
+        queens(5);
     }
 }
