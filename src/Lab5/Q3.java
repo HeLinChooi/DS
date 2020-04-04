@@ -1,6 +1,7 @@
 package Lab5;
 //He Lin's code
 
+import java.util.ArrayList;
 import java.util.Stack;
 
 public class Q3 {
@@ -8,6 +9,8 @@ public class Q3 {
     //better explanation.
     //this stack only store col num
     static Stack<Integer> stack = new Stack<>();
+    static Stack<Integer> tempStack = new Stack<>();
+    static ArrayList<Integer> solutions = new ArrayList<>();
     static int solutionsNumber = 0;
     //method to check if queen should put there
     public static boolean isSafe(boolean[][] board,int row,int col){
@@ -51,10 +54,11 @@ public class Q3 {
             if(!valid){
                 //base case
                 if(stack.isEmpty()){
-                    break;
+                        break;
                 }else{
                     int rowToBeDeleted = stack.size()-1;
                     int col = stack.pop();
+//                    System.out.println(rowToBeDeleted +" " + col);
                     board[rowToBeDeleted][col] = false;
 //                    System.out.println("backtrack");
 //                    printBoard(board);
@@ -65,17 +69,20 @@ public class Q3 {
             //found a solution, continue searching!
             if(stack.size() == board.length){
 //                System.out.println("found solution");
-                solutionsNumber++;
-                currentCol = printBoardUsingStack(stack.size()-1);
-                currentCol++;
-                row = 0;
+                    solutionsNumber++;
+                    printBoardUsingStack(stack.size()-1);
+                    //after poping "stack", tempStack holding the "stack" in reverse, push them back
+                    while(!tempStack.isEmpty()){stack.push(tempStack.pop());}
+                    currentCol = stack.pop();
+                    row--;
+                    currentCol++;
 //                System.out.println("another search,"
 //                        + " row = " + row
 //                        + " col = " + currentCol);
-                //clean the board array
-                for (int i = 0; i < board.length; i++) {
-                    for (int j = 0; j < board.length; j++) {
-                        board[i][j] = false;
+                //instead of clean the whole board, erase the last element
+                for (int j = 0; j < board.length; j++) {
+                    if(board[board.length-1][j]){
+                        board[board.length-1][j] = false;
                     }
                 }
                 System.out.println("");
@@ -88,7 +95,7 @@ public class Q3 {
         int lastElement = -1;
         int col = -1;
         //recursive
-        col = stack.pop();
+        col = tempStack.push(stack.pop());
         int ret = printBoardUsingStack(N);
         if(ret == -1){
             lastElement = col;
@@ -116,13 +123,13 @@ public class Q3 {
     }
     //method to initialise N size board
     public static void queens(int n){
-        System.out.println("Solving the 4 Queens problem");
+        System.out.println("Solving the " + n + " Queens problem");
         boolean[][] board = new boolean[n][n];
         solve(board, 0);
         System.out.println("The number of solutions are : " + solutionsNumber);
     }
     public static void main(String[] args) {
         //decide how many queen you want!
-        queens(5);
+        queens(4);
     }
 }
