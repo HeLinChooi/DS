@@ -130,6 +130,6 @@ public class Q3 {
     }
     public static void main(String[] args) {
         //decide how many queen you want!
-        queens(4);
+        queens(8);
     }
 }
