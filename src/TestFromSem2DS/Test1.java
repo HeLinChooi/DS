@@ -1,15 +1,15 @@
 package TestFromSem2DS;
-class Foo<X> {
-   Foo(X x) { }
-   Foo<X> get(X x) { return this; }
-}
 
-class Test {
-   void test() {
-      Foo<?> f1 = new Foo(1).get(""); //ok - can pass String where Object is expected
-      //Foo<?> f2 = new Foo<>(1).get(""); //fail - cannot pass String where Integer is expected
-   }
-}
+import Lab8.Q2Product;
+
 public class Test1 {
-
+    public static void main(String[] args) {
+        Q2Product a = new Q2Product("s", "a", 2, 0);
+        Q2Product b = new Q2Product("s", "b", 3, 0);
+        Q2Product temp = a;
+        a = b;
+        b = temp;
+        System.out.println(a.getPrice());
+        System.out.println(b.getPrice());
+    }
 }
