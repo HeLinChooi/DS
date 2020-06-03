@@ -16,5 +16,6 @@ public class Q1 {
         System.out.println(k.getTotal());
         System.out.println("Number of occurence of " + 
                 5 + " is "+ k.getOccurenceNum(5));
+//        k.levelOrder(k.getRoot());
     }
 }

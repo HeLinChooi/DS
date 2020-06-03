@@ -1,6 +1,7 @@
 package Lab7;
 //He Lin's code
 
+import Lab4.Q2LinkedList;
 import Tuto6.Q1Queue;
 import Tuto7.BSTNode;
 import java.util.HashMap;
@@ -8,7 +9,10 @@ import java.util.HashMap;
 public class Q1BST<T extends Comparable<T>> {
 
     private BSTNode root;
-
+   //added for levelOrder method 
+    public BSTNode getRoot(){
+        return root;
+    }
     public boolean isEmpty() {
         return root == null;
     }
@@ -28,28 +32,29 @@ public class Q1BST<T extends Comparable<T>> {
     public boolean contains(T t) {
         return find(root, t);
     }
-
-    private boolean find(BSTNode a, T t) {
-        if (a == null) {
+    
+    //here the 'root' refer to root in a subtree
+    private boolean find(BSTNode root, T t) {
+        if (root == null) {
             return false;
-        } else if (t.compareTo((T) a.getData()) < 0) {
-            return find(a.getLeft(), t);
-        } else if (t.compareTo((T) a.getData()) > 0) {
-            return find(a.getRight(), t);
+        } else if (t.compareTo((T) root.getData()) < 0) {
+            return find(root.getLeft(), t);
+        } else if (t.compareTo((T) root.getData()) > 0) {
+            return find(root.getRight(), t);
         } else {
             return true;
         }
     }
-
-    public T getElement(BSTNode a, T t) {
-        if (a == null) {
+    //here the 'root' refer to root in a subtree
+    public T getElement(BSTNode root, T t) {
+        if (root == null) {
             return null;
-        } else if (t.compareTo((T) a.getData()) < 0) {
-            return getElement(a.getLeft(), t);
-        } else if (t.compareTo((T) a.getData()) > 0) {
-            return getElement(a.getRight(), t);
+        } else if (t.compareTo((T) root.getData()) < 0) {
+            return getElement(root.getLeft(), t);
+        } else if (t.compareTo((T) root.getData()) > 0) {
+            return getElement(root.getRight(), t);
         } else {
-            return (T) a.getData();
+            return (T) root.getData();
         }
     }
 
@@ -155,7 +160,27 @@ public class Q1BST<T extends Comparable<T>> {
             Q.enqueue((T) a.getData());
         }
     }
+    //not functioning but will give u the idea of BFS
+    public void levelOrder(BSTNode root) {
+    if (root == null) return;
+    Q1Queue<BSTNode> q = new Q1Queue<>();
+    q.enqueue(root); // add first level to queue
+    int nodeCountInLevel = 1;
+        while (!q.isEmpty()) {
+            BSTNode x = q.dequeue();
+            nodeCountInLevel--;
+            if (x.getLeft()!= null)
+                q.enqueue(x.getLeft());
+            if (x.getRight() != null)
+                q.enqueue(x.getRight());
 
+            // move to next level when all nodes are processed in current level
+            if (nodeCountInLevel == 0 && !q.isEmpty()) {
+                nodeCountInLevel += q.getSize();
+                q.showQueue();
+            }
+        }
+}
     public void balance() {
         int size = this.getSize();
         setOrder(Q1BST.order.INORDER);

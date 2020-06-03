@@ -1,0 +1,99 @@
+[33mcommit 1dc042175f1f36f036d8d22919ec6e15fcc28ece[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: HeLinChooi <helinchooi@gmail.com>
+Date:   Thu Mar 19 16:07:37 2020 +0800
+
+    Commit lab 4
+
+[33mcommit 824481d8e072c802a02b526b425a161cfbfc8f53[m
+Author: HeLinChooi <helinchooi@gmail.com>
+Date:   Thu Mar 19 16:01:35 2020 +0800
+
+    Lab 4 Q1 Q2 updates
+
+[33mcommit 21167cf2fb2ff84f0277423d9d359fcb24ff5b2d[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: 06760a1 3bce325
+Author: HeLin <helinchooi@gmail.com>
+Date:   Sun Mar 15 10:24:48 2020 +0800
+
+    Merge origin/master
+
+[33mcommit 06760a1372c5b34f6c98ac0aced6fa107c75b9e3[m
+Author: HeLin <helinchooi@gmail.com>
+Date:   Sun Mar 15 10:24:28 2020 +0800
+
+    Update for some bugs fix
+
+[33mcommit 3bce325a14bdf20c0fa1d4cea8fef2fa537c06af[m
+Author: HeLinChooi <57652846+HeLinChooi@users.noreply.github.com>
+Date:   Sat Mar 14 18:29:27 2020 +0800
+
+    Create README.md
+
+[33mcommit 19775744f3f070f87ce1770adc1e93d8461fcc75[m
+Author: HeLin <helinchooi@gmail.com>
+Date:   Sat Mar 14 18:27:03 2020 +0800
+
+    My Ans for Viva 1 Day 3
+
+[33mcommit d88687c4890402c47286b57f17bc10ed0cbe341c[m
+Author: HeLin <helinchooi@gmail.com>
+Date:   Thu Mar 12 00:59:04 2020 +0800
+
+    My Ans for Viva 1 Day 1
+
+[33mcommit 17fa483c1c8779f06c370a9c20c6b6621a02005f[m
+Author: HeLin <helinchooi@gmail.com>
+Date:   Wed Mar 11 15:06:13 2020 +0800
+
+    Update: use instanceof operator instead
+
+[33mcommit 3fc27501681fe6120eb2ec0cd6964d25e491f978[m
+Author: HeLin <helinchooi@gmail.com>
+Date:   Wed Mar 11 02:08:58 2020 +0800
+
+    Update: use instanceof operator instead
+
+[33mcommit b9f0b2de5e83dab501f97e2973395703887c9fd7[m
+Author: HeLin <helinchooi@gmail.com>
+Date:   Fri Mar 6 01:19:09 2020 +0800
+
+    Update: use instanceof operator instead
+
+[33mcommit 4995847be08d44c72686ebeb6f312b7749cee6a0[m
+Merge: 3247a43 f84953e
+Author: HeLin <helinchooi@gmail.com>
+Date:   Wed Mar 4 21:44:31 2020 +0800
+
+    Merge origin/master
+
+[33mcommit 3247a437ccd1e6e1b330b3db19521ea2b0787384[m
+Author: HeLin <helinchooi@gmail.com>
+Date:   Wed Mar 4 21:40:17 2020 +0800
+
+[33mcommit f84953e9f26e0d5923d0889df003b3244de2bc34[m
+Author: HeLinChooi <57652846+HeLinChooi@users.noreply.github.com>
+Date:   Tue Mar 3 20:11:43 2020 +0800
+
+    Update README.md
+
+[33mcommit 5650d9610930b330e19453664a1116bb99b241f7[m
+Author: HeLinChooi <57652846+HeLinChooi@users.noreply.github.com>
+Date:   Tue Mar 3 19:36:12 2020 +0800
+
+    Update README.md
+
+[33mcommit ffd562e406ffef10065cf97927102b279d4ac2c1[m
+Author: HeLinChooi <57652846+HeLinChooi@users.noreply.github.com>
+Date:   Tue Mar 3 16:27:47 2020 +0800
+
+    Update README.md
+
+[33mcommit b10f936e7ec6fbe7e38e3da66ba0e1ac80991530[m
+Author: HeLinChooi <57652846+HeLinChooi@users.noreply.github.com>
+Date:   Tue Mar 3 16:06:42 2020 +0800
+
+    Create README.md
+
+[33mcommit 1cd15c5e73947a4532079d013ecaf83a579447eb[m
+Author: HeLin <helinchooi@gmail.com>
+Date:   Tue Mar 3 16:02:05 2020 +0800
